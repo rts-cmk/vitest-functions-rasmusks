@@ -22,6 +22,9 @@ describe("mergeSortedArrays", () => {
     it("should recieve two sorted arrays and return a combined sorted array", () => {
         expect(mergeSortedArrays([1, 2, 3, 4, 5, 6], [7, 8, 9])).toStrictEqual([1, 2, 3, 4, 5, 6, 7, 8, 9])
     })
+    it("should recieve two backwards arrays and return a combined sorted array", () => {
+        expect(mergeSortedArrays([5, 4, 3], [2, 1])).toStrictEqual([2, 1, 5, 4, 3])
+    })
 })
 
 describe("flattenArray", () => {
