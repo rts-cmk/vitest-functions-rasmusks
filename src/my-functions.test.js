@@ -27,6 +27,10 @@ describe('checkIfPrime', () => {
   it('should return true when checking if 17 is prime', () => {
     expect(checkIfPrime(17)).toBe(true);
   });
+
+  it('should return false when checking if 1 is prime', () => {
+    expect(checkIfPrime(1)).toBe(false);
+  });
 });
 
 describe('findMaximumNumber', () => {
