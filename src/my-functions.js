@@ -6,7 +6,7 @@
  */
 export function calculateSum(a, b) {
     // Skriv din kode her:
-
+    return a + b
 
 
 }
@@ -18,9 +18,20 @@ export function calculateSum(a, b) {
  */
 export function checkIfPrime(number) {
     // Skriv din kode her:
+    if(number <= 1){
+        return false
+    } else{
+        for(let i = 2; i < number; i++){
+        if(number % i === 0){
+            console.log(number, i)
+            return false
+        }
+    }
 
+    return true
+    }
 
-
+    
 }
 
 /**
@@ -30,7 +41,7 @@ export function checkIfPrime(number) {
  */
 export function findMaximumNumber(array) {
     // Skriv din kode her:
-
+    return Math.max(...array)
 
 
 }
@@ -42,7 +53,7 @@ export function findMaximumNumber(array) {
  */
 export function removeDuplicateElements(array) {
     // Skriv din kode her:
-
+    return array.filter((item, index) => array.indexOf(item) === index)
 
 
 }
